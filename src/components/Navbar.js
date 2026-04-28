@@ -2,6 +2,8 @@ import React from "react";
 import { useContext } from "react";
 import { ProductContext } from "../context/ProductContext";
 import { Link } from "react-router-dom";
+import FavItemPage from "../pages/FavIttemPage";
+
 
 const Navbar = ()=>{
 
@@ -25,7 +27,7 @@ const favCount = fav.length;
     return(
         <div className="flex justify-between pt-2 pb-3 bg-gray-400">
             <h3 className="font-bold"><Link to='/'>ShopNow</Link></h3>
-            <p> <Link to='/CartPage'>🛒{cartCount}</Link>| ❤️{favCount} </p>
+            <p> <Link to='/CartPage'>🛒{cartCount}</Link>| <Link to='/FavItemPage'>❤️{favCount}</Link> </p>
         </div>
     )
 }
