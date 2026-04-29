@@ -2,7 +2,7 @@
 const FavItemPage = ()=>{
     return(
         <div>
-            <p>welcome to your fav item page</p>
+            <p>welcome to  fav item page</p>
         </div>
     )
 }
